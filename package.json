@@ -1,12 +1,26 @@
 {
   "author": "Johan Dahlberg <dahlberg.johan@gmail.com> (jfd.github.com)",
-  "name": "WPilot",
+  "name": "wpilot",
   "description": "A proof-of-concept multiplayer game in the Browser",
   "version": "1.0.0",
   "dependencies": {
-    "ws": "~0.4.22"
+    "ws": "~7.2.3"
+  },
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore . && prettier --check --ignore-path .gitignore \"**/*.{json,md,yaml,yml}\""
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.19.1"
   },
   "engines": {
-    "node": ">=0.7.7"
-  }
+    "node": ">=13.10.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com:j3h4/wpilot.git"
+  },
+  "license": "See license in the file LICENSE"
 }
